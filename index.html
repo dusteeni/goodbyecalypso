@@ -127,4 +127,27 @@
 	</style>
 	<script>
 		function videoError() {
-			// If the video fails to load or
+			// If the video fails to load or play, replace the iframe with a Twitter image
+			document.getElementById("video-background").innerHTML
+ = '<img src="https://pbs.twimg.com/media/FtCsRF7XgAAcXEf?format=jpg&name=large" alt="Alternate background image">';
+		}
+	</script>
+</head>
+<body>
+	<div id="video-background">
+		<iframe width="1020" height="630" src="https://www.youtube.com/embed/UzxbqSP5Mgw&t=1s?autoplay=1&loop=1&modestbranding=1&controls=0&mute=1&playlist=UzxbqSP5Mgw&t=1s" frameborder="0" allowfullscreen onerror="videoError()"></iframe>
+	</div>
+	<div id="content">
+	<h1><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; color:white;">GOODBYE&nbsp;CALYPSØ</a></h1>
+
+	<h2><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; color:white;">S Ø U N D</a></h2>
+
+	<h3><a href="https://www.goodbyecalypso.com/scenery" style="text-decoration:none; color:white;">S C E N E R Y</a></h3>
+	<h4><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S H O P</a></h4>
+<h5><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S T R E A M</a></h5>
+
+
+	</div>
+</body>
+</html>
+
