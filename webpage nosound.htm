@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> G O O D B Y E C A L Y P S O </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: white;
+			color: white;
+			font-family: Proxima Nova, sans-serif;
+		}
+
+		#video-background {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			overflow: hidden;
+		}
+
+		#video-background iframe {
+			min-width: 100%;
+			min-height: 100%;
+			width: auto;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
+
+		#mobile-background {
+			background-image: url('https://drive.google.com/file/d/1Gztga9ae5R9MK9OhzEjMGY1uOdAnRPPx/view?usp=share_link');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		#content {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+			padding-top: 5vw;
+		}
+
+		h1 {
+			font-size: 3.5vw;
+			margin-top: 0;
+		}
+
+		h2 {
+			font-size: 3vw;
+			margin-top: 0;
+		}
+
+		h3 {
+			font-size: 2.5vw;
+			margin-top: 0;
+		}
+
+		h4 {
+			font-size: 2vw;
+			margin-bottom: 3vw;
+		}
+
+		h5 {
+			font-size: 1.5vw;
+			margin-bottom: 3vw;
+		}
+
+		button {
+			font-size: 1.5vw;
+			background-color: white;
+			color: black;
+			border: none;
+			padding: 1.5vw 3vw;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+
+		/* Media queries for responsive design */
+		@media screen and (min-width: 768px) {
+			h1 {
+				font-size: 4vw;
+			}
+			h2 {
+				font-size: 3.5vw;
+			}
+			h3 {
+				font-size: 3vw;
+			}
+			h4 {
+				font-size: 2.5vw;
+			}
+			h5 {
+				font-size: 2vw;
+			}
+			button {
+				font-size: 2vw;
+				padding: 1.5vw 3vw;
+			}
+			#content {
+				padding-top: 3vw;
+			}
+			#video-background {
+				display: block;
+			}
+			#mobile-background {
+				display: none;
+			}
+		}
+
+	</style>
+	<script>
+		function videoError() {
+			// If the video fails to load or play, replace the iframe with a Twitter image
+			document.getElementById("video-background").innerHTML
+ = '<img src="https://pbs.twimg.com/media/FtCsRF7XgAAcXEf?format=jpg&name=large" alt="Alternate background image">';
+		}
+	</script>
+</head>
+<body>
+	<div id="video-background">
+		<iframe width="1020" height="630" src="https://www.youtube.com/embed/UzxbqSP5Mgw&t=1s?autoplay=1&loop=1&controls=1&mute=1&playlist=UzxbqSP5Mgw&t=1s" frameborder="0" allowfullscreen onerror="videoError()"></iframe>
+	</div>
+	<div id="content">
+	<h1><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; color:white;">GOODBYE&nbsp;CALYPSØ</a></h1>
+
+	<h2><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; color:white;">S Ø U N D</a></h2>
+
+	<h3><a href="https://www.goodbyecalypso.com/scenery" style="text-decoration:none; color:white;">S C E N E R Y</a></h3>
+	<h4><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S H O P</a></h4>
+<h5><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S T R E A M</a></h5>
+
+
+	</div>
+</body>
+</html>
+
+
