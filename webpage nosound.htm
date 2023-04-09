@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> G O O D B Y E C A L Y P S O </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+      font-family: 'YourFontName';
+      src: url('path/to/your/font.woff2') format('woff2'),
+           url('path/to/your/font.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: white;
+      font-family: 'Proxima Nova', sans-serif;
+    }
+
+    #video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+      display: none;
+    }
+
+    #video-background iframe {
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      max-width: 100%;
+    }
+
+    #video-background img {
+      max-width: 100%;
+    }
+
+    #content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding-top: 10%;
+    }
+
+    h1 {
+      font-size: 3vw;
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+      margin-top: 0px;
+    }
+
+    h3 {
+      font-size: 2vw;
+      margin-top: 0px;
+    }
+
+    h4 {
+      font-size: 1.5vw;
+      margin-bottom: 3vw;
+      margin-top: 0px;
+    }
+
+    h5 {
+      font-size: 1.2vw;
+      margin-bottom: 3vw;
+      margin-top: 0px;
+    }
+
+    button {
+      font-size: 1.2vw;
+      background-color: white;
+			color: black;
+			border: none;
+			padding: 1.2vw 2.5vw;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		/* Add margins to all h elements */
+		h1, h2, h3, h4, h5 {
+			margin-left: 100pix ;
+		}
+
+		/* Media queries for responsive design */
+		@media screen and (min-width: 1px) {
+			h1 {
+				font-size: 4vw;
+			}
+			h2 {
+				font-size: 3.5vw;
+			}
+			h3 {
+				font-size: 3vw;
+			}
+			h4 {
+				font-size: 2.5vw;
+			}
+			h5 {
+				font-size: 2vw;
+			}
+			button {
+				font-size: 2vw;
+				padding: 1.5vw 3vw;
+			}
+			#content {
+				padding-top: 5%;
+			}
+			#video-background {
+				display: block;
+			}
+		}
+
+	</style>
+	<script>
+		function videoError() {
+			// If the video fails to load or play, replace the iframe with a Twitter image
+			document.getElementById("video-background").innerHTML
+ = '<img src="https://pbs.twimg.com/media/FtCsRF7XgAAcXEf?format=jpg&name=large" alt="Alternate background image">';
+		}
+	</script>
+</head>
+<body>
+	<div id="video-background">
+		<iframe width="1020" height="630" src="https://www.youtube.com/embed/UzxbqSP5Mgw&t=1s?autoplay=1&plasinline=1&loop=1&modestbranding=1&controls=0&mute=1&playlist=UzxbqSP5
+Mgw&t=1s?autoplay=1&playsinline=1&loop=1&modestbranding=1&controls=1&mute=1&playlist=UzxbqSP5Mgw&t=1s" frameborder="0" allowfullscreen onerror="videoError()"></iframe>
+	</div>
+	<div id="content">
+	<h1><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; font-style:italic; font-weight: bold; color:white;">G O O D B Y E &nbsp;&nbsp;&nbsp;C A L Y P S Ø</a></h1>
+
+	<h2><a href="https://www.goodbyecalypso.com/sound" style="text-decoration:none; color:white;">S O U N D</a></h2>
+
+	<h3><a href="https://www.goodbyecalypso.com/scenery" style="text-decoration:none; color:white;">S C E N E R Y</a></h3>
+	<h4><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S H O P</a></h4>
+<h5><a href="https://www.goodbyecalypso.com/shop" style="text-decoration:none; color:white;">S T R E A M</a></h5>
+
+
+	</div>
+</body>
+</html>
+
